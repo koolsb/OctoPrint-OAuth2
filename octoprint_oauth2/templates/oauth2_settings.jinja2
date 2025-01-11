@@ -1,50 +1,66 @@
+<h3>{{ _('OAuth2 Config') }}</h3>
 <form class="form-horizontal">
     <div class="control-group">
-        <label class="control-label">{{ _('Auth Provider Name') }}</label>
+        <label class="control-label">{{ _('Provider Name') }}</label>
         <div class="controls">
             <input type="text" class="input-block-level" data-bind="value: settings.plugins.oauth2.provider_name">
+            <small>{{ _('This will appear on the login button') }} | {{ _('Requires a reload to take effect') }}</small>
         </div>
     </div>
     <div class="control-group">
-        <label class="control-label">{{ _('Well Known URL') }}</label>
+        <label class="control-label">{{ _('Well Known URL') }}*</label>
         <div class="controls">
             <input type="text" class="input-block-level" data-bind="value: settings.plugins.oauth2.well_known_url">
         </div>
     </div>
     <div class="control-group">
-        <label class="control-label">{{ _('Client ID') }}</label>
+        <label class="control-label">{{ _('Client ID') }}*</label>
         <div class="controls">
             <input type="text" class="input-block-level" data-bind="value: settings.plugins.oauth2.client_id">
         </div>
     </div>
     <div class="control-group">
-        <label class="control-label">{{ _('Client Secret') }}</label>
+        <label class="control-label">{{ _('Client Secret') }}*</label>
         <div class="controls">
             <input type="text" class="input-block-level" data-bind="value: settings.plugins.oauth2.client_secret">
         </div>
     </div>
     <div class="control-group">
-        <label class="control-label">{{ _('Allow Insecure Transport (Octopi is not behind https)') }}</label>
+        <label class="control-label">{{ _('Allow Insecure Transport') }}<br><span class="label label-important">{{ _('Danger') }}</span></label>
         <div class="controls">
-            <input type="checkbox" id="allow_insecure_transport" data-test-id="allow_insecure_transport" data-bind="checked: settings.plugins.oauth2.allow_insecure_transport">
+            <label class="checkbox">
+                <input type="checkbox" id="allow_insecure_transport" data-test-id="allow_insecure_transport" data-bind="checked: settings.plugins.oauth2.allow_insecure_transport">{{ _('Required if not using https to access OctoPrint') }}
+            </label>
         </div>
     </div>
     <div class="control-group">
+        <label class="control-label">{{ _('Auto Redirect') }}<br><span class="label label-important">{{ _('Danger') }}</span></label>
+        <div class="controls">
+            <label class="checkbox">
+                <input type="checkbox" id="auto_redirect" data-test-id="auto_redirect" data-bind="checked: settings.plugins.oauth2.auto_redirect"> 
+                {{ _('Automatically redirect to the OAuth2 login page, effectively disabling local auth') }}<br><small>{{ _('Requires a reload to take effect') }}</small>
+            </label>
+        </div>
+    </div>
+    <h4>{{ _('User Groups') }}</h4>
+    <p>{{ _('Map your authentication provider\'s groups to OctoPrint groups. If no groups are configured, no OAuth users will be able to login.') }}</p>
+    <div class="control-group">
         <label class="control-label">{{ _('Admin Group') }}</label>
         <div class="controls">
-            <input type="text" class="input-block-level" data-bind="value: settings.plugins.oauth2.group_mapping.admin_group">
+            <input type="text" class="input-block-level" data-bind="value: settings.plugins.oauth2.group_mapping.admins">
         </div>
     </div>
     <div class="control-group">
         <label class="control-label">{{ _('Operator Group') }}</label>
         <div class="controls">
-            <input type="text" class="input-block-level" data-bind="value: settings.plugins.oauth2.group_mapping.operator_group">
+            <input type="text" class="input-block-level" data-bind="value: settings.plugins.oauth2.group_mapping.operator">
         </div>
     </div>
     <div class="control-group">
         <label class="control-label">{{ _('Read Only Group') }}</label>
         <div class="controls">
-            <input type="text" class="input-block-level" data-bind="value: settings.plugins.oauth2.group_mapping.readonly_group">
+            <input type="text" class="input-block-level" data-bind="value: settings.plugins.oauth2.group_mapping.readonly">
         </div>
     </div>
 </form>
+<p>{{ _('* Required') }}</p>

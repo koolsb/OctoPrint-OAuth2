@@ -1,6 +1,6 @@
 # OpenID OAuth2 Authentication
 
-**TODO:** Describe what your plugin does.
+A plugin to support OIDC / OAuth2 authentication in OctoPrint >= 1.11.0.
 
 ## Setup
 
@@ -9,9 +9,12 @@ or manually using this URL:
 
     https://github.com/koolsb/OctoPrint-OAuth2/archive/master.zip
 
-**TODO:** Describe how to install your plugin, if more needs to be done than just installing it via pip or through
-the plugin manager.
-
 ## Configuration
 
-**TODO:** Describe your plugin's configuration options (if any).
+All configuration 
+
+Navigate to the OAuth2 Plugin config in OctoPrint Settings
+
+Enter the `Well Known URL`, `Client ID`, and `Client Secret` from your authentication provider
+
+Map at least one OctoPrint Group to a group name provided by your authentication provider.

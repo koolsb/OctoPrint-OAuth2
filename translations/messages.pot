@@ -1,0 +1,167 @@
+# Translations template for OpenID OAuth2 Authentication.
+# Copyright (C) 2025 The OctoPrint Project
+# This file is distributed under the same license as the OpenID OAuth2
+# Authentication project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenID OAuth2 Authentication 0.1.0\n"
+"Report-Msgid-Bugs-To: i18n@octoprint.org\n"
+"POT-Creation-Date: 2025-01-11 16:48-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: octoprint_oauth2/templates/oauth2_access.jinja2:4
+#: octoprint_oauth2/templates/oauth2_access.jinja2:11
+msgid "Password"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_access.jinja2:6
+msgid ""
+"You are currently using an OpenID provider to login. You do not have a "
+"password set for this account."
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_access.jinja2:13
+msgid ""
+"If you do not wish to change your password, just leave the following "
+"fields empty."
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_access.jinja2:16
+msgid "Current Password"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_access.jinja2:19
+#: octoprint_oauth2/templates/oauth2_access.jinja2:32
+msgid "Passwords do not match"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_access.jinja2:23
+msgid "New Password"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_access.jinja2:29
+msgid "Repeat Password"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_access.jinja2:35
+msgid ""
+"\n"
+"            Please note that you will be <strong>logged out "
+"immediately</strong> after changing your password and asked to login "
+"again.\n"
+"        "
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_access.jinja2:41
+msgid "API Key"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_access.jinja2:43
+msgid "Current API Key"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_access.jinja2:46
+msgid "N/A"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_access.jinja2:51
+msgid ""
+"Please note that changes to the API key are applied immediately, without "
+"having to \"Confirm\" first."
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_access.jinja2:54
+msgid "Reveal API Key"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_access.jinja2:58
+msgid "QR Code"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:1
+msgid "OpenID Config"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:5
+msgid "Provider Name"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:8
+msgid "This will appear on the login button"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:8
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:42
+msgid "Requires a reload to take effect"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:12
+msgid "Well Known URL"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:18
+msgid "Client ID"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:24
+msgid "Client Secret"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:30
+msgid "Allow Insecure Transport"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:30
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:38
+msgid "Danger"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:33
+msgid "Required if not using https to access OctoPrint"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:38
+msgid "Auto Redirect"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:42
+msgid ""
+"Automatically redirect to the OAuth2 login page, effectively disabling "
+"local auth"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:46
+msgid "User Groups"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:47
+msgid ""
+"Map your authentication provider's groups to OctoPrint groups. If no "
+"groups are configured, no OAuth users will be able to login."
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:49
+msgid "Admin Group"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:55
+msgid "Operator Group"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:61
+msgid "Read Only Group"
+msgstr ""
+
+#: octoprint_oauth2/templates/oauth2_settings.jinja2:67
+msgid "* Required"
+msgstr ""
+
